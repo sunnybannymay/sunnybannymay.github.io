@@ -6,23 +6,7 @@ import * as action_types from './action-types';
 import * as getter_types from './getter-types';
 import axios from 'axios';
 
-// import { createVuexLoader } from 'vuex-loading';
-// const VuexLoading = createVuexLoader({
-//     moduleName: 'loading',
-//     componentName: 'my-loading',
-//     className: 'my-loading'
-// });
-
 Vue.use(Vuex);
-//Vue.use(VuexLoading);
-
-// let host;
-// if (Config.hasOwnProperty('apiServer')) {
-//     host = `${Config.apiServer.host}:${Config.apiServer.port}`;
-// } else {
-//     host = '';
-// }
-
 
 const state = {
     items_bitskins: [],
@@ -76,13 +60,13 @@ const actions = {
         });
     }
 };
-const api_local={
-    search(searchString, resolve, reject) {
-        axios.get(`${host}/favItemsList?q=${searchString}`)
-            .then(resolve)
-            .catch(reject);
-    }
-};
+// const api_local={
+//     search(searchString, resolve, reject) {
+//         axios.get(`${host}/favItemsList?q=${searchString}`)
+//             .then(resolve)
+//             .catch(reject);
+//     }
+// };
 const mutations = {
     [mutation_types.UPLOAD_DATA](state, {items}) {
         state.items_bitskins = items;

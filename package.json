@@ -8,7 +8,7 @@
     "build": "webpack --config build/webpack.prod.js",
     "dev": "node build/server.js",
     "lint": "xo **/client/**/*.{vue,js} !node_modules/**",
-    "server": "node build/server.js server/favItemsList.json"
+    "start": "node build/server.js server/favItemsList.json"
   },
   "author": "nadya kott",
   "license": "MIT",
