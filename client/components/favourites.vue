@@ -15,7 +15,7 @@
                 <td>{{item.bitop}} %</td>
                 <td>{{item.opbit}} %</td>
                 <td>
-                    <button :class="{delete: true}" @click="deleteItemFav(item)">Delete from favs</button>
+                    <button :class="{'delete': true}" @click="deleteItemFav(item)">Delete from favs</button>
                 </td>
             </tr>
         </table>
@@ -26,31 +26,19 @@
     import * as action_types from '../store/action-types';
     import * as getter_types from '../store/getter-types';
     import * as mutation_types from '../store/mutation-types';
-    import {mapGetters, mapActions} from 'vuex';
+    import {mapGetters} from 'vuex';
 
     export default {
         data() {
             return {
-                columns: ['item name', 'lowest price bitskins', 'lowest price opskins', 'BIT/OP (%)', 'OP/BIT (%)','Delete from fav']
+                columns: ['item name', 'lowest price bitskins', 'lowest price opskins', 'BIT/OP (%)', 'OP/BIT (%)', 'Delete from fav']
 
             }
         },
         methods: {
             deleteItemFav(item) {
-    this.$store.commit(mutation_types.DELETE_FROM_FAV,item);
+                this.$store.commit(mutation_types.DELETE_FROM_FAV, item);
             }
-//            searchItem: (value) => {
-//                this.$store.dispatch([action_types.SEARCH_ITEM], value);
-////                    .then((res) => {
-////                        this.foundedCityList = res.filter((foundCity) => {
-////// If city already in favourite list - delete it
-////                            const index = this.$store.state.favouriteCityList
-////                                .findIndex((favCity) => foundCity.id === favCity.id);
-////                            return index === -1;
-////                        });
-////                    })
-////                    .catch(() => this.foundedCityList = []);
-//            },
         },
         computed:
             mapGetters({

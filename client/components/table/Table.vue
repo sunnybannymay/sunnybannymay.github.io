@@ -42,8 +42,18 @@
     import * as mutation_types from '../../store/mutation-types';
     import * as action_types from '../../store/action-types';
     import * as getter_types from '../../store/getter-types';
+    import { createVuexLoader } from 'vuex-loading';
+    import VueSimpleSpinner from "../../../node_modules/vue-simple-spinner/src/components/Spinner.vue";
+
+    //    const VuexLoading = createVuexLoader({
+    //        moduleName: 'loading',
+    //        componentName: 'my-loading',
+    //        className: 'my-loading'
+    //    });
+    //    Vue.use(VuexLoading);
 
     export default {
+
         data() {
             return {
                 columns: ['item name', 'lowest price bitskins', 'lowest price opskins', 'BIT/OP (%)', 'OP/BIT (%)', 'Add to favs'],
