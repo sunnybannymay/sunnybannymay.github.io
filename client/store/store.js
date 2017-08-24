@@ -8,12 +8,20 @@ import axios from 'axios';
 
 Vue.use(Vuex);
 
+let host;
+if (Config.hasOwnProperty('apiServer')) {
+    host = `${Config.apiServer.host}:${Config.apiServer.port}`;
+} else {
+    host = '';
+}
+
 const state = {
     items_bitskins: [],
     items_opskins: [],
     items: [],
     favouriteItemsList: []
 };
+
 
 const getters = {
     [getter_types.GET_ITEMS_BITSKINS]: state => state.items_bitskins,
@@ -48,7 +56,7 @@ const actions = {
         commit(mutation_types.ADD_TO_FAVS, item);
     },
     [action_types.GET_FAV_ITEMS]({commit},reject) {
-        axios.get('http://localhost:3000/favItemsList')
+        axios.get(host+'/favItemsList')
             .then((res) => {
                 commit(mutation_types.GET_FAV_ITEMS, res.data);
             })
@@ -95,7 +103,7 @@ const mutations = {
     [mutation_types.ADD_TO_FAVS](state, item) {
         console.log(state.favouriteItemsList);
         state.favouriteItemsList.push(item);
-        axios.post('http://localhost:3000/favItemsList', item);
+        axios.post(host+'/favItemsList', item);
     },
     [mutation_types.GET_FAV_ITEMS](state, favitems) {
         state.favouriteItemsList = favitems;
@@ -105,7 +113,7 @@ const mutations = {
         const index = state.favouriteItemsList
             .findIndex(item => itemToRemove.id === item.id);
         state.favouriteItemsList.splice(index, 1);
-        axios.delete('http://localhost:3000/favItemsList/' + itemToRemove.id);
+        axios.delete(host+'/favItemsList/' + itemToRemove.id);
     },
     searchItem(value)
     {
