@@ -1,6 +1,0 @@
-export const ADD_TO_FAVS='ADD_TO_FAVS';
-export const UPLOAD_DATA='UPLOAD_DATA';
-export const UPLOAD_DATA_OPSKINS='UPLOAD_DATA_OPSKINS';
-export const GET_ALL_ITEMS='GET_ALL_ITEMS';
-export const GET_FAV_ITEMS='GET_FAV_ITEMS';
-export const DELETE_FROM_FAV='DELETE_FROM_FAV';
