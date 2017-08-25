@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72cbffb7-f5cd-49dc-abe2-9df5cb108007" name="Default" comment="fetching API from marketplace">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client.f726b178.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client.f726b178.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.37626b50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.37626b50.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor.42e8f6b3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor.42e8f6b3.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="72cbffb7-f5cd-49dc-abe2-9df5cb108007" name="Default" comment="fetching API from marketplace" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -78,7 +69,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -202,7 +193,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
